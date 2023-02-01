@@ -2,14 +2,13 @@ import React from 'react';
 import {
   useColorScheme
 } from 'react-native';
-import ListContainer from '../views/List/ListContainer';
-import OnboardingContainer from '../views/Onboarding/OnboardingContainer';
+import IntroScreen from '../components/introScreen/IntroScreen';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-      <OnboardingContainer />
+      <IntroScreen loader={true}/>
   );
 }
 
