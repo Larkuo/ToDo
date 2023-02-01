@@ -1,7 +1,11 @@
 # ToDo
 
-Redo of previous todo app
-Cleaner code, better ui & more functionality (maybe, hehe)
+Redo of previous todo app - [here](https://github.com/Larkuo/todoApp)
+
+With this project I am trying to
+ - Write cleaner code ie. improve readability
+ - Build better ui
+ - & more functionality (maybe, hehe)
 I'll add more details later
 
 Adios
