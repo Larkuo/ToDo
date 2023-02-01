@@ -3,10 +3,8 @@ import ListView from "./ListView";
 
 interface ListContainerProps {};
 
-function ListContainer({}:ListContainerProps): JSX.Element {
+export function ListContainer({}:ListContainerProps): JSX.Element {
     return(
       <ListView />  
     );
 }
-
-export default ListContainer;

@@ -3,7 +3,7 @@ import OnboardingView from "./OnboardingView";
 
 interface OnboardingContainerProps {};
 
-function OnboardingContainer ({
+export function OnboardingContainer ({
 
 }:OnboardingContainerProps): JSX.Element {
     return(
@@ -11,4 +11,3 @@ function OnboardingContainer ({
     );
 }
 
-export default OnboardingContainer;
