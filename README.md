@@ -6,9 +6,6 @@ With this project I am trying to
  - Write cleaner code ie. improve readability
  - Build better ui
  - & more functionality (maybe, hehe)
-I'll add more details later
-
-Adios
 
 ---
 #### Update 1: [01 Feb 2023] 
