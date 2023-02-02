@@ -1,49 +1,43 @@
 import React, { useState } from "react";
 import { 
-    Text, View 
+    View,
+    Text,
 } from "react-native";
-import PrimaryButton from "../../components/primaryButton/primaryButton";
 import Screen from "../../components/screen/screen";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import { OnboardingViewProps } from "./props/Onboarding.props";
+import { styles } from "./styles/Onboarding.styles";
+import SwiperDots from "./components/SwiperDots";
+import SwiperButtons from "./components/SwiperButtons";
+import Logo from "../../components/logo/logo";
 
-interface OnboardingViewProps {}
+function OnboardingView ({
+    swipeCount,
+    swiperPosition,
+    skip,
+    previous,
+    next,
+    getStarted,
+}: OnboardingViewProps): JSX.Element {
 
-function OnboardingView ({}: OnboardingViewProps): JSX.Element {
-    const [count, setCount] = useState(0);
-
-    function onPress() {
-        setCount(count+1);
-        console.log({count});
-    }
     return(
         <Screen type="fixed">
-            <Text>onboarding view</Text>
-            <View style={{flexDirection: 'row', paddingHorizontal: 10, justifyContent: 'center', width: '100%'}}>
-                <PrimaryButton
-                    mode="filled"
-                    title="filled btn"
-                    stylesOverride={{width: '40%'}}
-                    onPress={onPress}
-                />
-                <PrimaryButton
-                    mode="outline"
-                    title="outline btn"
-                    stylesOverride={{width: '40%'}}
-                    onPress={onPress}
-                />
+            <Logo />
+            <View>
+                <View></View>
+                <View>
+                    <Text>title</Text>
+                    <Text>description</Text>
+                </View>
             </View>
-            <PrimaryButton
-                disabled={true}
-                loading={true}
-                mode="filled"
-                title="filled disabled btn"
-                onPress={onPress}
-            />
-            <PrimaryButton
-                disabled={true}
-                loading={true}
-                mode="outline"
-                title="outline disabled btn"
-                onPress={onPress}
+            <SwiperDots swipeCount={swipeCount} swiperPosition={swiperPosition}/>
+            <SwiperButtons
+                swipeCount={swipeCount}
+                swiperPosition={swiperPosition}
+                skip={skip}
+                previous={previous}
+                next={next}
+                getStarted={getStarted}
             />
         </Screen>
     );

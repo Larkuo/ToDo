@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
         marginRight: 10,
     },
     title: {
-        fontSize: 12,
+        fontSize: 14,
         textTransform: 'lowercase',
         fontWeight: '600',
     },
