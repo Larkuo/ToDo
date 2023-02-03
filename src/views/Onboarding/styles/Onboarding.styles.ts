@@ -27,6 +27,7 @@ export const styles = StyleSheet.create({
         color: 'black',
         textAlign: 'center',
         textTransform: 'lowercase',
+        width: screenWidth * 0.85,
     },
     dotsContainer: {
         width: '100%',
@@ -54,8 +55,11 @@ export const styles = StyleSheet.create({
     },
     bottomButton: {
         width: '65%',
-        marginHorizontal: '10%',
+        marginHorizontal: '20%',
         marginBottom: '10%',
+    },
+    bottomButtonText: {
+        fontSize: 18,
     },
     bottomContainer: {
         width: '100%',

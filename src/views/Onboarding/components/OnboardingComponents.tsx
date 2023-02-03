@@ -17,6 +17,7 @@ export function skipButton ({onPress}: {onPress?: () => void}) {
             mode='outline'
             title='skip'
             stylesOverride={styles.bottomButton}
+            titleStylesOverride={styles.bottomButtonText}
             onPress={onPress}
         />
     );
@@ -28,6 +29,7 @@ export function nextButton ({onPress}: {onPress?: () => void}) {
             mode='filled'
             title='next'
             stylesOverride={styles.bottomButton}
+            titleStylesOverride={styles.bottomButtonText}
             onPress={onPress}
         />
     );
@@ -39,6 +41,7 @@ export function doneButton ({onPress}: {onPress?: () => void}) {
             mode='filled'
             title='get started'
             stylesOverride={styles.bottomButton}
+            titleStylesOverride={styles.bottomButtonText}
             onPress={onPress}
         />
     );

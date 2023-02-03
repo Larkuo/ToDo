@@ -32,10 +32,7 @@ function OnboardingView ({
                     title: item.title,
                     subtitle: item.description,
                     image: <Image
-                                source={item.image
-                                            ? item.image
-                                            : require('../../assets/todo_logo.png')
-                                        }
+                                source={item.image}
                                 style={styles.cardImage}
                             />
                 }
