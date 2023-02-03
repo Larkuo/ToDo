@@ -1,10 +1,10 @@
 import React from 'react';
-import { OnboardingContainer } from '../views';
+import { LoginContainer } from '../views';
 
 function App(): JSX.Element {
 
   return (
-      <OnboardingContainer />
+      <LoginContainer />
   );
 }
 
