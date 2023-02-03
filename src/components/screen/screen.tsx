@@ -15,7 +15,8 @@ function NoScrollScreen (props:ScreenProps) {
 
     return(
         <KeyboardAvoidingView
-            style={isDarkMode?styles.backgroundStyleDark:styles.backgroundStyleLight}
+            // style={isDarkMode?styles.backgroundStyleDark:styles.backgroundStyleLight}
+            style={styles.backgroundStyleLight}
         >
             <StatusBar
                 barStyle={isDarkMode ? 'light-content' : 'dark-content'}
@@ -34,7 +35,8 @@ function ScrollScreen (props:ScreenProps) {
 
     return(
         <KeyboardAvoidingView
-            style={isDarkMode?styles.backgroundStyleDark:styles.backgroundStyleLight}
+            // style={isDarkMode?styles.backgroundStyleDark:styles.backgroundStyleLight}
+            style={styles.backgroundStyleLight}
         >
             <StatusBar
                 barStyle={isDarkMode ? 'light-content' : 'dark-content'}

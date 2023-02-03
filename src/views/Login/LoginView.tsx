@@ -12,7 +12,7 @@ function LoginView ({
 }: LoginViewProps): JSX.Element {
     return(
         <Screen type="fixed">
-            <Text>Login View</Text>
+            <Text style={{fontSize: 20, color: 'black'}}>Login View</Text>
         </Screen>
     );
 };
