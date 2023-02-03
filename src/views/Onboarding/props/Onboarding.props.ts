@@ -1,11 +1,7 @@
 export interface OnboardingContainerProps {};
 
 export interface OnboardingViewProps {
-    swipeCount: number;
-    swiperPosition: number;
     skip: () => void;
-    previous: () => void;
-    next: () => void;
     getStarted: () => void;
 };
 
@@ -24,3 +20,10 @@ export interface SwiperButtonsProps {
     next: () => void;
     getStarted: () => void;
 };
+
+export interface SwiperCardProps {
+    id: number,
+    title: string,
+    description: string,
+    imagePath?: string,
+}

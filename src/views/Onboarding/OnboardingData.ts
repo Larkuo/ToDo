@@ -2,19 +2,19 @@ export const OnboardingData = [
     {
         id: 1,
         title: 'Organise',
-        text: 'Orgainze all your tasks into lists and catergories',
-        imagePath: '../../assets',
+        description: 'Orgainze all your tasks into lists and catergories',
+        image: require('../../assets/onboard_1.png'),
     },
     {
         id: 2,
         title: 'Manage',
-        text: 'Stay on top of all your tasks and enjoy the calm of knowing everything is planned properly',
-        imagePath: '../../assets',
+        description: 'Stay on top of all your tasks and enjoy the calm of knowing everything is planned properly',
+        image: require('../../assets/onboard_2.png'),
     },
     {
         id: 3,
         title: 'Track',
-        text: 'Keep track of how much you are getting done each day, every week or every month',
-        imagePath: '../../assets',
+        description: 'Keep track of how much you are getting done each day, every week or every month',
+        image: require('../../assets/onboard_3.png'),
     },
 ]
