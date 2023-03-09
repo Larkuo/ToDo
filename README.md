@@ -13,3 +13,8 @@ With this project I am trying to
  - I've created some components which are all working properly 
  - I tried to put my ideas into a design. You can find that [here](https://www.figma.com/file/pzw9YLAHNdBkgdZywIWIRb/ToDo---Personal?node-id=0%3A1&t=TFn7fWysGSNxiXRd-1)
  - Adios till my next update ;)
+
+---
+#### Update 2: [09 Mar 2023]
+
+- Currently on hold. brb ;)
