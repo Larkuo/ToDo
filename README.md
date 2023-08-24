@@ -18,3 +18,7 @@ With this project I am trying to
 #### Update 2: [09 Mar 2023]
 
 - Currently on hold. brb ;)
+
+#### Update 3: [24 Aug 2023]
+
+- It took a while but we're backkk! Hopefully we finish this time.
