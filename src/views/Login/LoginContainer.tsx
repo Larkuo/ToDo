@@ -1,10 +1,14 @@
 import React, { useState } from "react";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { ParamListBase } from "@react-navigation/native";
 import LoginView from "./LoginView";
 
 
-interface LoginContainerProps {}
+interface LoginContainerProps {
+    navigation: NativeStackNavigationProp<ParamListBase>;
+}
 
-export function LoginContainer ({}: LoginContainerProps): JSX.Element {
+export function LoginContainer ({ navigation }: LoginContainerProps): JSX.Element {
     const [loginDetails, setLoginDetails] = useState({
         email: '',
         password: '',
@@ -20,6 +24,7 @@ export function LoginContainer ({}: LoginContainerProps): JSX.Element {
 
     function login(){
         console.log('login ', {loginDetails});
+        navigation.navigate('listMain');
     }
 
     function gotoSignup() {

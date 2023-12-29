@@ -1,13 +1,16 @@
 import React from 'react';
 import {SizeContextProvider} from '../context/SizeContext';
-import { LoginContainer } from '../views';
+import {NavigationContainer} from '@react-navigation/native';
+import { AppNavigator } from '../navigation/AppNavigator';
 
 function App(): JSX.Element {
 
   return (
-    <SizeContextProvider>
-      <LoginContainer />
-    </SizeContextProvider>
+    <NavigationContainer>
+      <SizeContextProvider>
+        <AppNavigator />
+      </SizeContextProvider>
+    </NavigationContainer>
   );
 }
 

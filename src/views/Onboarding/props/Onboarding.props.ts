@@ -1,4 +1,9 @@
-export interface OnboardingContainerProps {};
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { ParamListBase } from "@react-navigation/native";
+
+export interface OnboardingContainerProps {
+    navigation: NativeStackNavigationProp<ParamListBase>;
+};
 
 export interface OnboardingViewProps {
     skip: () => void;

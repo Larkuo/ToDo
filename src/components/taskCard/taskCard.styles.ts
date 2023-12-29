@@ -12,18 +12,26 @@ export const styles = StyleSheet.create({
         borderColor: 'black',
         borderRadius: 5,
         borderWidth: 3,
+        height: 70,
     },
     leftContainer: {
         flexDirection: 'row',
     },
     leftIconsView: {
         paddingRight: 10,
+        height: '100%',
+        justifyContent: 'center',
     },
     checkboxIcon: {},
     titleText: {
         textTransform: 'capitalize',
         color: 'black',
         fontSize: 14,
+    },
+    strikeText: {
+        textDecorationLine: 'line-through',
+        textDecorationStyle: 'solid',
+        color: 'black',
     },
     catergoryView: {
         flexDirection: 'column',

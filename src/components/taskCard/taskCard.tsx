@@ -38,14 +38,14 @@ function TaskCard({
                                 ? 'checkbox-outline'
                                 : 'checkbox-blank-outline'
                             }
-                        size={35}
+                        size={20}
                         color='black'
                         onPress={toggleStatus}
                         style={styles.checkboxIcon}
                     />
                 </View>
                 <View>
-                    <Text style={styles.titleText}>{title}</Text>
+                    <Text style={currentStatus === 'completed'? styles.strikeText : styles.titleText}>{title}</Text>
                     <View style={styles.catergoryView}>
                         <Text style={styles.catergoryText}>Category</Text>
                     </View>
