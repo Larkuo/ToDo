@@ -2,6 +2,8 @@ import React from "react";
 import { Text, View } from "react-native";
 import Screen from "../../components/screen/screen";
 import TaskCard from "../../components/taskCard/taskCard";
+import EditTaskModal from "../../components/editTaskModal/EditTaskModal";
+
 
 interface ListViewProps {};
 
@@ -15,6 +17,7 @@ function ListView({}: ListViewProps): JSX.Element {
                     <TaskCard key={num} title={`Task ${num}`}/>
                 ))}
             </View>
+            <EditTaskModal showModal={true} toggleModal={() => null}/>
         </Screen>
     );
 }

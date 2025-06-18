@@ -22,6 +22,11 @@ function TaskCard({
 }: TaskCardProps): JSX.Element {
 
     const [currentStatus, setCurrentStatus] = useState<StatusType>(status);
+    const [showEditModal, setShowEditModal] = useState(false);
+
+    function toggleEditModal(){
+        setShowEditModal(!showEditModal);
+    }
 
     function toggleStatus () {
         currentStatus === 'completed'
@@ -57,6 +62,7 @@ function TaskCard({
                     size={25}
                     color='black'
                     style={styles.icon}
+                    onPress={toggleEditModal}
                 />
                 <AntIcon
                     name='delete'

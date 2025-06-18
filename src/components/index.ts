@@ -5,3 +5,4 @@ export * from './screen/screen';
 export * from './taskCard/taskCard';
 export * from './passwordInput/PasswordInput';
 export * from './emailInput/EmailInput';
+export * from './editTaskModal/EditTaskModal';
